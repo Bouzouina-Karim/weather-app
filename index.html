@@ -10,7 +10,7 @@
     <div id="weather-container">
         <div id="search-box">
             <input type="text" id="city-input" placeholder="enter city name">
-            <button onclick="handleSearch()"><img src="C:\Users\ABL\Documents\Desktop\weather app\images\search.png" alt=""></button>
+            <button onclick="handleSearch()"><img src="images\search.png" alt=""></button>
         </div>
         <div id="temp-box">
             <img src="images/clear.png" id="weather-img" alt="">
@@ -22,7 +22,7 @@
         <div id="rest-info-box-img">
             <img src="images/humidity.png" class="w-img" alt="">
             <img src="images/wind.png" class="w-img" alt="">
-            <img src="C:\Users\ABL\Documents\Desktop\weather app\images\weather-air-pressure-svgrepo-com (1).svg" class="w-img" alt="">
+            <img src="images/weather-air-pressure-svgrepo-com (1).svg" class="w-img" alt="">
         </div>
         <div id="rest-info-box">
             <h4 id="humidity">humidity</h4>
@@ -79,7 +79,7 @@ async function checkWeather(city){
             weatherImage.src = 'images/snow.png';
             break;
         default:
-            weatherImage.src = 'images/clear.png'; // fallback
+            weatherImage.src = 'images/clear.png';
     }
 }
 
