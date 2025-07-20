@@ -152,30 +152,70 @@ body {
     }
 }
 
-
 @media (max-width: 400px) {
     #weather-container {
         border-radius: 25px;
         min-height: 450px;
         padding: 15px;
-    }
+    }   
     #search-box {
         margin-top: 20px;
-    }
+    } 
     #city-box h1 {
         font-size: 1.3rem;
-    }
+    }   
     #temp-box h2 {
         font-size: 1.5rem;
     }
     #rest-info-box {
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-    }
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: nowrap;
+        gap: 5px;
+        margin-top: 20px;
+        flex-direction: row;
+    } 
     #rest-info-box-img {
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: nowrap;
+        gap: 5px;
+        margin-top: 10px;
+        flex-direction: row;
+    }
+    .w-img {
+        width: 25px;
+        height: 25px;
+    }
+    #rest-info-box h4 {
+        font-size: 0.7rem;
+        margin-top: 5px;
+    }
+    #weather-img {
+        width: 70px;
+        height: 70px;
+    }
+    #temp {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 350px) {
+    #rest-info-box h4 {
+        font-size: 0.6rem;
+    }
+    .w-img {
+        width: 20px;
+        height: 20px;
+    }
+    #weather-img {
+        width: 60px;
+        height: 60px;
+    }
+    #temp {
+        font-size: 1.1rem;
+    }
+    #city {
+        font-size: 1.1rem;
     }
 }
