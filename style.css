@@ -12,33 +12,36 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    min-height: 100vh;
+    padding: 20px;
 }
 
 #weather-container {
-    margin-top: 30px;
+    margin: 30px auto;
     color: white;
     display: flex;
     background-image: linear-gradient(to bottom,rgb(35, 91, 212),rgb(214, 247, 148));
     border-radius: 40px;
-    width: 450px;
-    height: 540px;
+    width: 100%;
+    max-width: 450px;
+    min-height: 540px;
     flex-direction: column;
     text-align: center;
-    
+    padding: 20px;
 }
 
 #search-box {
-    margin-top:40px ;
-    width: 80%;
+    margin:40px auto 0 ;
+    width: 100%;
+    max-width: 350px;
     display: flex;
     align-items: center;
-    margin-left: 50px;
     gap: 20px;
     
     
 }
 #search-box input {
-    width: 300px;
+    width: 100%;
     height: 35px;
     border-radius: 17px 0 17px 0;
     border: 1px solid grey;
@@ -71,6 +74,7 @@ body {
     justify-content: center;
     box-sizing: border-box;
     transition: 0.5s;
+    flex-shrink: 0;
     
 }
 #search-box button:hover {
@@ -92,14 +96,18 @@ body {
 #weather-img {
     width: 100px;
     height: 100px;
+    max-width: 100%;
 }
 #rest-info-box {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 15px;
 }
 .w-img {
     width: 45px;
     height: 45px;
+    max-width: 100%;
 }
 #rest-info-box-img {
     margin-top: 90px;
@@ -107,3 +115,67 @@ body {
     justify-content: space-around;
 }
 
+@media (max-width: 500px) {
+    #weather-container {
+        border-radius: 30px;
+        min-height: 500px;
+    }
+    #search-box {
+        margin-top: 30px;
+        gap: 10px;
+    }
+    #search-box input {
+        height: 30px;
+        font-size: 12px;
+    }
+    #search-box button {
+        width: 30px;
+        height: 30px;
+    }
+    #weather-img {
+        width: 80px;
+        height: 80px;
+    }
+    #city-box h1 {
+        font-size: 1.5rem;
+    }
+    #temp-box h2 {
+        font-size: 1.8rem;
+    }
+    .w-img {
+        width: 35px;
+        height: 35px;
+    }
+    #rest-info-box h4,
+    #rest-info-box-img {
+        font-size: 0.9rem;
+    }
+}
+
+
+@media (max-width: 400px) {
+    #weather-container {
+        border-radius: 25px;
+        min-height: 450px;
+        padding: 15px;
+    }
+    #search-box {
+        margin-top: 20px;
+    }
+    #city-box h1 {
+        font-size: 1.3rem;
+    }
+    #temp-box h2 {
+        font-size: 1.5rem;
+    }
+    #rest-info-box {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    #rest-info-box-img {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+}
