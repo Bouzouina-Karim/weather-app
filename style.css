@@ -150,6 +150,9 @@ body {
     #rest-info-box-img {
         font-size: 0.9rem;
     }
+    #rest-info-box-img {
+        margin-top: 110px;
+    }
 }
 
 @media (max-width: 400px) {
@@ -180,7 +183,7 @@ body {
         justify-content: space-around;
         flex-wrap: nowrap;
         gap: 5px;
-        margin-top: 10px;
+        margin-top: 100px;
         flex-direction: row;
     }
     .w-img {
